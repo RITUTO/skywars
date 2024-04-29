@@ -1,0 +1,67 @@
+{
+    "namespace": "rule_section",
+    "rule_button@settings_common.section_toggle_base": {
+		"$toggle_view_binding_name": "rule_button_toggle",
+		"$glyph_color_texture": "textures/ui/accessibility_glyph_color",		
+		"$glyph_texture": "textures/ui/accessibility_glyph_color",
+        "$glyph_size": [
+            32,
+            32
+        ],
+		"$button_text": "ルール",
+        "$toggle_property_bag": {
+            "#panel_title": "ルール"
+        }
+    },
+    "rule_section": {
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "rule_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+			{
+				"spacer_0": {
+					"type": "panel",
+					"size": [ "100%", "10px" ]
+				}
+			},
+			{
+				"rule_info@how_to_play_common.header": {
+					"$text": "ルール"
+				}
+			},
+			{
+				"rule_info_p1@how_to_play_common.paragraph": {
+					"$text": "スパムをしない"
+				}
+			},
+			{
+				"rule_info_p2@how_to_play_common.paragraph": {
+					"$text": "宣伝をしない(○○さんのワールドに行かない？とかもアウト)"
+				}
+			},
+			{
+				"rule_info_p3@how_to_play_common.paragraph": {
+					"$text": "チート hackを使わない"
+				}
+			}
+			,
+			{
+				"rule_info_p4@how_to_play_common.paragraph": {
+					"$text": "opクレクレをしない"
+				}
+			}
+        ]
+    }
+}

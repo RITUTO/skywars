@@ -1,0 +1,45 @@
+
+    {
+	"format_version": 2,
+	"header": {
+		"name": "sky用アドオン",
+		"description": "rituto135877作",
+		"uuid": "cf66bdb3-67be-4e3b-a6f0-70d08719eebe",
+		"version": [
+			0,
+			0,
+			1
+		],
+		"min_engine_version": [
+			1,
+			20,
+			51
+		]
+	},
+	"modules": [
+		{
+			"description": "Script resources",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "57308ecc-1817-48e6-819a-c20e9dcab339",
+			"version": [
+				0,
+				0,
+				1
+			],
+			"entry": "scripts/index.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		}
+	]
+}
+           
+           
